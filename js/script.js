@@ -5,8 +5,8 @@
     document.addEventListener("DOMContentLoaded", function() {
 
         // form submit button
-        const trapeziodFormSubmit = document.querySelector("#trapeziumF button");
-        trapeziodFormSubmit.addEventListener("click", function (e) {
+        const trapeziumFormSubmit = document.querySelector("#trapeziumF button");
+        trapeziumFormSubmit.addEventListener("click", function (e) {
             // to prevent refreshing
             e.preventDefault();
 
@@ -130,11 +130,6 @@
                 canvasSides.fillText(`${BC} cm`, Math.max(x2, x3), canvas.scrollHeight - (y1 + y4)/2 - 55);
                 canvasSides.fillText(`${AD} cm`, Math.min(x1, x4), canvas.scrollHeight - (y1 + y4)/2 - 55);
 
-                /*
-                vertexBC.translate((x3 + x4)/2 + 25, canvas.scrollHeight/0.8);
-                vertexBC.rotate(-Math.PI/2);
-                vertexBC.save();
-                */
             }
         });
 

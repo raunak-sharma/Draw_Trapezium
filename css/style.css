@@ -13,7 +13,7 @@ body {
     width: 100%;
 }
 
-.header-container {
+.header-container, .footer-container {
     min-height: 20vh;
     margin: 0;
     padding: 5vh 0;
@@ -24,7 +24,7 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-.header-container h1 {
+.header-container h1, .footer-container h1 {
     margin: 0;
 }
 
