@@ -27,13 +27,19 @@
             const CD = Math.round(Math.sqrt(Math.pow(Math.abs(x3 - x4), 2) + Math.pow(Math.abs(y3 - y4), 2)) * 100)/100;
             const AD = Math.round(Math.sqrt(Math.pow(Math.abs(x1 - x4), 2) + Math.pow(Math.abs(y1 - y4), 2)) * 100)/100;
 
-            // to check intersecting lines
+            // calculating slopes
+            const m1 = (y1 - y2)/(x1 - x2);
+            const m2 = (y2 - y3)/(x2 - x3);
+            const m3 = (y3 - y4)/(x3 - x4);
+            const m4 = (y1 - y4)/(x1 - x4);
+
+            // to check intersecting lines and if exactly 2 lines are parallel or not
             if(x1 >= x2 || x4 >= x3 || y1 >= y4 || y2 >= y3) {
                 alert("Invalid Input! Two non-adjacent lines cannot intersect.");
             }
 
-            // if not intersecting
-            else {
+            // if not intersecting and exactly one pair of opposite side parallel
+            else if((m1 == m3 && m2 != m4) || (m2 == m4 && m1 != m3)) {
 
                 // shifting the x co-ordinates to 1st quadrant
                 if(x1 < 0 || x4 < 0) {
@@ -130,6 +136,11 @@
                 canvasSides.fillText(`${BC} cm`, Math.max(x2, x3), canvas.scrollHeight - (y1 + y4)/2 - 55);
                 canvasSides.fillText(`${AD} cm`, Math.min(x1, x4), canvas.scrollHeight - (y1 + y4)/2 - 55);
 
+            }
+
+            // if not exactly one pair of opposite sides parallel
+            else {
+                alert("Exactly one pair of opposite sides should be parallel");
             }
         });
 
