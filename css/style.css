@@ -35,6 +35,7 @@ body {
 }
 
 .form-container {
+    min-height: 75vh;
     text-align: center;
     flex-direction: column;
 }
@@ -106,6 +107,10 @@ body {
     .canvas-container, .form-container {
         padding: 0 2vw;
         margin: 10vh auto;
+    }
+
+    #myDrawing {
+        width: calc(50vw - 12px);
     }
 
 }
