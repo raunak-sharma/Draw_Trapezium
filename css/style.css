@@ -55,7 +55,7 @@ body {
 }
 
 #myDrawing {
-    height: 50vh;
+    height: 75vh;
     box-sizing: border-box;
     border: 0px;
     width: calc(80vw - 2px);
