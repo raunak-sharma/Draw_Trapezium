@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Draw Trapezium</title>
+
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+    <!-- Internal Files Import-->
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 header-container">
+                <h1>Draw Trapezium</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 canvas-container">
+                <canvas id="myDrawing">Canvas is not supported in your browser!</canvas>
+            </div>
+            <div class="col-lg-6 form-container">
+                <form action="post" name="trapeziumForm" id="trapeziumF">
+                    <h1>Enter the co-ordinates</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for="x1">A(x1) :</label>
+                            <input type="text" name="x1" value="100"><br>
+                            <label for="x2">B(x2) :</label>
+                            <input type="text" name="x2" value="600"><br>
+                            <label for="x3">C(x3) :</label>
+                            <input type="text" name="x3" value="450"><br>
+                            <label for="x4">D(x4) :</label>
+                            <input type="text" name="x4" value="150">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="y1">A(y1) :</label>
+                            <input type="text" name="y1" value="100"><br>
+                            <label for="y2">B(y2) :</label>
+                            <input type="text" name="y2" value="100"><br>
+                            <label for="y3">C(y3) :</label>
+                            <input type="text" name="y3" value="400"><br>
+                            <label for="y4">D(y4) :</label>
+                            <input type="text" name="y4" value="400">
+                        </div>
+                    </div>
+                    <center>
+                        <br>
+                        <button type="submit" id="submitButton">Submit</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 header-container">
+                <h1>View Code</h1>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
